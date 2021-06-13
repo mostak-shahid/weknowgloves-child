@@ -42,6 +42,9 @@ header#masthead:before,header#masthead:after{
 #main {
     max-width: 1200px;
 }
+#main article{
+    background-color: #ffffff;
+}
 .singular .entry-title{
     font-size: 30px;
     font-size: 2rem;
