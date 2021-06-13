@@ -75,6 +75,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 }
 .widget-area, .widget-area a {
     color: #ffffff;
+    font-size: 15px;
 }
 .widget-area .widget-wrapper {
     display: grid;
