@@ -21,6 +21,9 @@ header#masthead {
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+header#masthead:before,header#masthead:after{
+    display: none;
+}
 .site-logo {
     margin: 0;
 }
