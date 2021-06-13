@@ -73,7 +73,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-bottom: 0;
     background-color: #1a1818;    
 }
-.widget-area, .widget-area a {
+.widget-area, .widget-area a, .widget-area a:link, .widget-area a:visited, .widget-area a:active {
     color: #ffffff;
     font-size: 15px;
 }
