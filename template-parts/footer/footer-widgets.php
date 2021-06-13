@@ -10,7 +10,7 @@
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 
 	<aside class="widget-area">
-	    <div class="widget-area">
+	    <div class="widget-wrapper">
 		    <?php dynamic_sidebar( 'sidebar-1' ); ?>
 	    </div>
 	</aside><!-- .widget-area -->
