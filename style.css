@@ -67,4 +67,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 
 .widget-area {
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+    background-color: ##1a1818;
+    color: #ffffff;
 }
