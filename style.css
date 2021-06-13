@@ -81,8 +81,6 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: calc(2 * var(--global--spacing-horizontal));
-    padding-top: 60px;
-    padding-bottom: 60px;
     max-width: 1200px;
     width: 100%;
     margin-left: auto;
@@ -91,6 +89,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .site-footer {
     margin-left: 0;
     margin-right: 0;
+    padding-bottom: 0;
     background-color: #000000;
     max-width: unset;
 }
