@@ -32,4 +32,9 @@ header#masthead:before,header#masthead:after{
 }
 .site-logo .custom-logo {
     max-height: 31px;
+    display: inline-block;
+    vertical-align: top;
+}
+.site-branding {
+    margin: 0;
 }
