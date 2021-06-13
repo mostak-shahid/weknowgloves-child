@@ -64,3 +64,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     font-size: 30px;
     font-size: 2rem;
 }
+
+.widget-area {
+    grid-template-columns: repeat(4, 1fr);
+}
