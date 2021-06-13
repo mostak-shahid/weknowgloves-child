@@ -68,6 +68,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .widget-area {
     display: block;
     width: 100%;
+    max-width: unset;
     margin-top: 0;
     margin-bottom: 0;
     background-color: #1a1818;
@@ -76,6 +77,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .widget-area .widget-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: calc(2 * var(--global--spacing-horizontal));
     padding-top: 60px;
     padding-bottom: 60px;
     max-width: 1200px;
