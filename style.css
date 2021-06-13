@@ -17,6 +17,8 @@ header#masthead {
     background-color: #fff;
     width: 100%;
     max-width: unset;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .site-logo {
     margin: 0;
