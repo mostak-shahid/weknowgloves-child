@@ -19,6 +19,7 @@ header#masthead {
     max-width: unset;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .site-logo {
     margin: 0;
