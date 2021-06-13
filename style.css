@@ -44,6 +44,8 @@ header#masthead:before,header#masthead:after{
 }
 #main article{
     background-color: #ffffff;
+    margin: 0;
+    padding: 5.34em 6.67em;
 }
 .singular .entry-title{
     font-size: 30px;
