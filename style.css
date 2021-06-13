@@ -88,9 +88,18 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-left: auto;
     margin-right: auto;
 }
-.footer-content {
+.site-footer {
+    margin-left: 0;
+    margin-right: 0;
     background-color: #000000;
+    max-width: unset;
+}
+.footer-content {
     color: #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
