@@ -47,9 +47,10 @@ header#masthead:before,header#masthead:after{
     margin: 0;
     padding: 5.34em 6.67em;
 }
-#main article .entry-content p{
+#main article .entry-content > *{
     margin-left: 0;
     margin-right: 0;
+    max-width: none;
 }
 .singular .entry-title {
     font-size: 30px;
