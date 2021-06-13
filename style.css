@@ -11,6 +11,7 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentyfifteenchild
 */
+
 header#masthead {
     margin: 0;
     padding: 0 35px;
@@ -37,4 +38,11 @@ header#masthead:before,header#masthead:after{
 }
 .site-branding {
     margin: 0;
+}
+#main {
+    max-width: 1200px;
+}
+.singular .entry-title{
+    font-size: 30px;
+    font-size: 2rem;
 }
