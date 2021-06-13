@@ -64,7 +64,12 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     font-size: 30px;
     font-size: 2rem;
 }
-
+.single .site-main > article > .entry-footer {
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: unset;
+}
 .widget-area {
     display: block;
     width: 100%;
