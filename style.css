@@ -88,3 +88,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-left: auto;
     margin-right: auto;
 }
+.footer-content {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
