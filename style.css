@@ -71,7 +71,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     max-width: unset;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #1a1818;
+    background-color: #1a1818;    
+}
+.widget-area, .widget-area a {
     color: #ffffff;
 }
 .widget-area .widget-wrapper {
