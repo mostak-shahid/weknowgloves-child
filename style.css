@@ -11,7 +11,8 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentyfifteenchild
 */
-
+body{font-size: 15px;}
+h2{font-size: 30px;}
 header#masthead {
     margin: 0;
     padding: 0 35px;
