@@ -30,3 +30,6 @@ header#masthead:before,header#masthead:after{
 #site-navigation {
     margin: 0;
 }
+.site-logo .custom-logo {
+    max-height: 31px;
+}
