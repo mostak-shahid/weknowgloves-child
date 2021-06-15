@@ -106,6 +106,8 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 }
 .category-page-header {
     display: block;
+    border-bottom-style: none;
+    margin: 0 auto;
 }
 .category-title {
     font-size: 48px;
