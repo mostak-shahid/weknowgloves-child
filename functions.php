@@ -33,3 +33,15 @@ function child_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 require_once 'aq_resizer.php';
 require_once 'carbon-fields.php';
+function mos_widgets_init(){
+	register_sidebar(array(
+		'id' => 'sidebar-right',
+		'name' => __('Right Sidebar', 'mos'),
+		//'description' => __('Add widgets here to appear in your Left SideBar', 'mos'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		'after_widget' => '</div>'
+	));		
+}
+add_action('widgets_init', 'mos_widgets_init');
