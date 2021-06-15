@@ -83,6 +83,13 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .post-thumbnail > *{
     margin: 0!important;
 }
+#main .category-post-wrapper article {
+    padding: 0;
+    border-radius: 12px;
+}
+#main .category-post-wrapper article .category-post-text{
+    padding: 20px;
+}
 .widget-area {
     display: block;
     width: 100%;
@@ -149,7 +156,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     #main article {
         background-color: #ffffff;
         margin: 0;
-        padding: 30;
+        padding: 30px;
         width: 68%;
         margin-right: 2%;
     }
@@ -158,5 +165,13 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
         padding: 30px;
         width: 30%;
         margin-top: 0;
+    }
+    .category-post-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    #main .category-post-wrapper article {
+        width: 33.33%;        
     }
 }

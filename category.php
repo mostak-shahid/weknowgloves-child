@@ -38,8 +38,8 @@ $description = get_the_archive_description();
 		        </h3>
 		        <div class="category-post-meta-data">
 		            <span class="category-post-author"><?php echo get_the_author(); ?></span>
-		            <span class="category-post-date">March 29, 2021<?php echo get_the_date( 'F j, Y' ) ?></span>
-		            <span class="category-post-time">5:36 am<?php echo get_the_date( 'g:i a' ) ?></span>
+		            <span class="category-post-date"><?php echo get_the_date( 'F j, Y' ) ?></span>
+		            <span class="category-post-time"><?php echo get_the_date( 'g:i a' ) ?></span>
 		        </div>
 		        <div class="category-post-excerpt">
 		            <p><?php echo wp_trim_words( get_the_content(), 15, '...' );?></p>
