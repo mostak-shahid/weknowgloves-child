@@ -86,6 +86,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 #main .category-post-wrapper article {
     padding: 0;
     border-radius: 12px;
+    overflow: hidden;
 }
 #main .category-post-wrapper article .category-post-text{
     padding: 20px;
@@ -172,6 +173,6 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
         align-items: stretch;
     }
     #main .category-post-wrapper article {
-        width: 33.33%;        
+        width: 31.33%;        
     }
 }
