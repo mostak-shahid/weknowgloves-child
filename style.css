@@ -57,6 +57,10 @@ header#masthead:before,header#masthead:after{
     margin-right: 0;
     max-width: none;
 }
+#main aside.sidebar-right {
+    background-color: #ffffff;
+    padding: 5.34em 6.67em;
+}
 h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-content h4, h5, .entry-content h5, h6, .entry-content h6, p, .entry-content p, .entry-content .wp-block-image {
     margin-bottom: 20px;
 }
@@ -108,4 +112,6 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+}
+@media (min-width: 992px) {
 }
