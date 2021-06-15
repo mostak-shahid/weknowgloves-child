@@ -119,6 +119,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
 }
+.category-post-thumbnail-link {
+    display: block;
+}
 .site-footer {
     margin-left: 0;
     margin-right: 0;

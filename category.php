@@ -23,11 +23,33 @@ $description = get_the_archive_description();
 			<div class="archive-description"><?php echo wp_kses_post( wpautop( $description ) ); ?></div>
 		<?php endif; ?>
 	</header><!-- .page-header -->
-
+    <div class="category-post-wrapper">
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
-		<?php echo '<div>' . get_the_title() . '</div>'; ?>
+		<article class="category-post-unit">
+		    <?php if (has_post_thumbnail()) : ?>
+                <a class="category-post-thumbnail-link" href="<?php echo get_the_permalink() ?>">
+                    <?php echo get_the_post_thumbnail(get_the_ID(), 'full', ['class'=>'lazy'])?>
+                </a>
+		    <?php endif;?>
+		    <div class="category-post-text">
+		        <h3 class="category-post-title">
+		            <a href="<?php echo get_the_permalink() ?>"><?php echo get_the_title() ?></a>
+		        </h3>
+		        <div class="category-post-meta-data">
+		            <span class="category-post-author"><?php echo get_the_author(); ?></span>
+		            <span class="category-post-date">March 29, 2021<?php echo get_the_date( 'F j, Y' ) ?></span>
+		            <span class="category-post-time">5:36 am<?php echo get_the_date( 'g:i a' ) ?></span>
+		        </div>
+		        <div class="category-post-excerpt">
+		            <p><?php echo wp_trim_words( get_the_content(), 15, '...' );?></p>
+		        </div>
+		        <a class="category-post-read-more" href="<?php echo get_the_permalink() ?>">
+		            Read More » </a>
+		    </div>
+		</article>
 	<?php endwhile; ?>
+	</div>
 
 	<?php twenty_twenty_one_the_posts_navigation(); ?>
 
