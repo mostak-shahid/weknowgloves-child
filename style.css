@@ -104,10 +104,15 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-left: auto;
     margin-right: auto;
 }
+.category-page-wrapper {
+    min-width: 100%;
+}
 .category-page-header {
     display: block;
     border-bottom-style: none;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 .category-title {
     font-size: 48px;
