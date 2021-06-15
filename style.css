@@ -114,4 +114,21 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     text-align: center;
 }
 @media (min-width: 992px) {
+    main#main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    #main article {
+        background-color: #ffffff;
+        margin: 0;
+        padding: 5.34em 6.67em;
+        width: 70%;
+    }
+    #main aside.sidebar-right {
+        background-color: #ffffff;
+        padding: 10px;
+        width: 30%;
+        margin-top: 0;
+    }
 }
