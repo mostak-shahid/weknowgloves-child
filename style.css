@@ -117,7 +117,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .category-title {
     font-size: 48px;
     font-weight: 600;
-    font-family: var( --e-global-typography-primary-font-family ), Sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .site-footer {
     margin-left: 0;
