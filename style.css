@@ -91,6 +91,14 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 #main .category-post-wrapper article .category-post-text{
     padding: 20px;
 }
+#main .category-post-wrapper article .category-post-text .category-post-title{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+#main .category-post-wrapper article .category-post-text .category-post-title a {
+    text-decoration: none;
+}
 .widget-area {
     display: block;
     width: 100%;
