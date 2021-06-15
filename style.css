@@ -81,7 +81,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     padding-bottom: 0;
 }
 .post-thumbnail > *{
-    margin-top: 0;
+    margin: 0;
 }
 .widget-area {
     display: block;
