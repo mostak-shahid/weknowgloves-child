@@ -18,7 +18,7 @@ $description = get_the_archive_description();
 
 	<header class="page-header alignwide">
 		<?php //the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-		<h2><?php //echo single_cat_title( '',false )?></h2>
+		<h2><?php echo single_cat_title( '',false )?></h2>
 		<?php if ( $description ) : ?>
 			<div class="archive-description"><?php echo wp_kses_post( wpautop( $description ) ); ?></div>
 		<?php endif; ?>
