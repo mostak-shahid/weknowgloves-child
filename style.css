@@ -50,7 +50,10 @@ header#masthead:before,header#masthead:after{
 #main article{
     background-color: #ffffff;
     margin: 0;
-    padding: 5.34em 6.67em;
+    padding: 30px;
+}
+#main aside.sidebar-right {
+    padding: 30px;
 }
 #main article .entry-content > *{
     margin-left: 0;
@@ -122,13 +125,13 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     #main article {
         background-color: #ffffff;
         margin: 0;
-        padding: 5.34em 6.67em;
+        padding: 30;
         width: 68%;
         margin-right: 2%;
     }
     #main aside.sidebar-right {
         background-color: #ffffff;
-        padding: 10px;
+        padding: 30px;
         width: 30%;
         margin-top: 0;
     }
