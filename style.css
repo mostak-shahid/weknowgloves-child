@@ -99,6 +99,14 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 #main .category-post-wrapper article .category-post-text .category-post-title a {
     text-decoration: none;
 }
+#main .category-post-wrapper article .category-post-text .category-post-meta-data {
+    color: #5E5D5D;
+    font-weight: 300;
+    /* margin-bottom: 8px; */
+    line-height: 1.3em;
+    font-size: 12px;
+    margin-bottom: 13px;
+}
 .widget-area {
     display: block;
     width: 100%;
