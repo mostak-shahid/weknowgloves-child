@@ -107,7 +107,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     font-size: 12px;
     margin-bottom: 13px;
 }
-#main .category-post-wrapper article .category-post-text .category-post-meta-data span + span {
+#main .category-post-wrapper article .category-post-text .category-post-meta-data span + span:before {
     content: "#" " ";
 }
 .widget-area {
