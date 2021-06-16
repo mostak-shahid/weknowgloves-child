@@ -110,7 +110,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 #main .category-post-wrapper article .category-post-text .category-post-meta-data span + span:before {
     content: "#" " ";
 }
-#main .category-post-wrapper article .category-post-text .category-post-meta-data a.category-post-read-more {
+#main .category-post-wrapper article .category-post-text a.category-post-read-more {
     color: #A11010;
     font-weight: 500;
     text-decoration: none;
