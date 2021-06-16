@@ -50,8 +50,18 @@ $description = get_the_archive_description();
 		</article>
 	<?php endwhile; ?>
 	</div>
+	<div class="pagination-wrapper">
+    <?php
+        the_posts_pagination( array(
+            'show_all' => false,
+            'screen_reader_text' => " ",
+            'prev_text'          => 'Prev',
+            'next_text'          => 'Next',
+        ) );
+    ?>
+    </div>
 
-	<?php twenty_twenty_one_the_posts_navigation(); ?>
+	<?php //twenty_twenty_one_the_posts_navigation(); ?>
 
 <?php else : ?>
 	<?php get_template_part( 'template-parts/content/content-none' ); ?>
