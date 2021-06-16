@@ -124,9 +124,13 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     border-style: none;
     padding-top: 0;
 }
+.pagination-wrapper nav.navigation.pagination .nav-links{
+    margin-top: 0;
+}
 .pagination-wrapper nav.navigation.pagination .nav-links span,
 .pagination-wrapper nav.navigation.pagination .nav-links a {
-    margin: 0;    
+    margin: 0;
+    text-decoration: none;
 }
 .widget-area {
     display: block;
