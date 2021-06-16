@@ -55,7 +55,7 @@ $description = get_the_archive_description();
         the_posts_pagination( array(
             'show_all' => false,
             'screen_reader_text' => " ",
-            'prev_text'          => 'Prev',
+            'prev_text'          => 'Previous',
             'next_text'          => 'Next',
         ) );
     ?>
