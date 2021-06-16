@@ -132,6 +132,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin: 0;
     text-decoration: none;
 }
+.pagination-wrapper nav.navigation.pagination .nav-links page-numbers.current{    
+    color: #B30812;
+}
 .widget-area {
     display: block;
     width: 100%;
