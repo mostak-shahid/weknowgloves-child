@@ -26,7 +26,7 @@ $description = get_the_archive_description();
     <div class="category-post-wrapper">
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
-		<article class="category-post-unit mb-30">
+		<article class="category-post-unit mb-20">
 		    <?php if (has_post_thumbnail()) : ?>
                 <a class="category-post-thumbnail-link" href="<?php echo get_the_permalink() ?>">
                     <?php echo get_the_post_thumbnail(get_the_ID(), 'full', ['class'=>'lazy'])?>
