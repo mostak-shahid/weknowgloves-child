@@ -33,6 +33,7 @@ function child_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 require_once 'aq_resizer.php';
 require_once 'carbon-fields.php';
+require_once 'hooks.php';
 function mos_widgets_init(){
 	register_sidebar(array(
 		'id' => 'sidebar-right',
