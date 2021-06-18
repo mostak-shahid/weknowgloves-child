@@ -126,6 +126,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-right: 0;
     padding: 0;
 }
+.page-home.singular #main article .entry-header {
+    display: none;
+}
 .pagination-wrapper {
     text-align: center;
 }
