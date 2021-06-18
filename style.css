@@ -118,6 +118,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     text-decoration: none;
     font-size: 12px;
 }
+.page-home main#main {
+    padding: 0;
+}
 .pagination-wrapper {
     text-align: center;
 }
