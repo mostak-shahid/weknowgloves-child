@@ -129,6 +129,10 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .page-home.singular #main article .entry-header {
     display: none;
 }
+.page-home .entry-content {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .pagination-wrapper {
     text-align: center;
 }
