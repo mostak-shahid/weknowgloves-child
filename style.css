@@ -147,6 +147,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-top: 0;
     margin-bottom: 0;
 }
+.page-home .entry-content > * {
+    margin-bottom: 0;
+}
 .page-home #main article .entry-content .alignfull .wp-block-columns {
     max-width: 1200px;
     margin-left: auto;
