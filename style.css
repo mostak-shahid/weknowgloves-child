@@ -121,6 +121,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .page-home main#main {
     padding: 0;
 }
+.page-home #main {
+    max-width: 100%;
+}
 .page-home #main article {
     width: 100%;
     margin-right: 0;
@@ -133,11 +136,8 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     margin-top: 0;
     margin-bottom: 0;
 }
-.page-home #main article .entry-content .alignfull {
-    margin-left:calc(-50vw + 50%)!important;
-    margin-right:calc(-50vw + 50%)!important;
-    max-width:unset;
-    width:100vw;
+.page-home #main article .entry-content .alignfull .wp-block-columns {
+    max-width: 1200px;
 }
 .pagination-wrapper {
     text-align: center;
