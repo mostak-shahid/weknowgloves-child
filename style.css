@@ -121,6 +121,11 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .page-home main#main {
     padding: 0;
 }
+.page-home #main article {
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+}
 .pagination-wrapper {
     text-align: center;
 }
