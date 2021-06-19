@@ -240,9 +240,13 @@ function crb_attach_theme_options() {
     });
     Block::make( __( 'Mos Post Block' ) )
     ->add_fields( array(
+        Field::make( 'multiselect', 'mos-post-source-1', __( 'Select Posts' ) )
+            ->set_options(mos_get_posts()),
+        
         Field::make( 'text', 'mos-post-posts', __( 'No of Post' ) ),
         Field::make( 'text', 'mos-post-count', __( 'Excerpt Count' ) ),
         Field::make( 'text', 'mos-post-btn-text', __( 'Read More Text' ) ),
+        Field::make( 'text', 'mos-post-redirect-url', __( 'Redirect URL' ) ),
         
         Field::make( 'checkbox', 'mos-post-feature', 'Show Featured Image' ),
         Field::make( 'text', 'mos-post-feature-large', __( 'Large Image Size' ) )
