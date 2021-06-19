@@ -311,6 +311,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     padding-left: 10px;
     padding-right: 10px;
 }
+.mos-post-meta .meta-unit .updated {
+    display: none;
+}
 .layout-1 .mos-post-grid-block {
     background-color: #ffffff;
 }
