@@ -353,6 +353,10 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .menu-button-container span.dropdown-icon {    
     color: #ffffff;
 }
+aside.widget-area {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 @media (min-width:768.98px){
     .mos-post-grid-one{grid-column-end:span 1}
     .mos-post-grid-two{grid-column-end:span 2}
