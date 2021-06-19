@@ -317,6 +317,9 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .layout-1 .mos-post-grid-block {
     background-color: #ffffff;
 }
+.layout-1 .mos-post-block {
+    margin-bottom: 20px;
+}
 .layout-1 .mos-post-grid-block .text-wrapper{
     padding: 30px;
 }
