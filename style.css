@@ -406,6 +406,16 @@ aside.widget-area {
         display: -o-flex;
         display: flex;
     }
+    .primary-navigation {
+        position: absolute;
+        top: var(--global--admin-bar--height);
+        right: 0;
+        color: var(--primary-nav--color-text);
+        font-size: var(--primary-nav--font-size);
+        line-height: 1.15;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     .primary-navigation > .primary-menu-container {
         visibility: hidden;
     }
