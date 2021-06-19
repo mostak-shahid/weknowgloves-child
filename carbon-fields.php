@@ -242,6 +242,8 @@ function crb_attach_theme_options() {
     ->add_fields( array(
         Field::make( 'multiselect', 'mos-post-source-1', __( 'Select Posts' ) )
             ->set_options(mos_get_posts()),
+        Field::make( 'multiselect', 'mos-post-source-2', __( 'Select Categories' ) )
+            ->set_options(mos_get_terms ('category', 'small')),
         
         Field::make( 'text', 'mos-post-posts', __( 'No of Post' ) ),
         Field::make( 'text', 'mos-post-count', __( 'Excerpt Count' ) ),
