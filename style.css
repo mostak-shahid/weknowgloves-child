@@ -346,6 +346,8 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 }
 .menu-button-container {
     background-color: #0b1751;
+    z-index: 1;
+    color: #ffffff;
 }
 @media (min-width:768.98px){
     .mos-post-grid-one{grid-column-end:span 1}
