@@ -293,6 +293,11 @@ function crb_attach_theme_options() {
                         'post_type' => 'post',
                         'posts_per_page' => 1,                    
                     );
+                    if (@fields['mos-post-source-1']) {
+                        $args['post__in'] = $fields['mos-post-source-1'];
+                    } elseif (@fields['mos-post-source-2']) {
+                        $args['category__in'] = $fields['mos-post-source-2'];                        
+                    }
                     $query = new WP_Query( $args );
                     if ($query->have_posts()) : ?>
                         <div class="mos-post-grid-block mos-post-grid-six feature-post-block">
@@ -376,11 +381,17 @@ function crb_attach_theme_options() {
                         </div>
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>
-                    <?php $args = array(
+                    <?php 
+                    $args = array(
                         'post_type' => 'post',
                         'posts_per_page' => (@$fields['mos-post-posts'] && $fields['mos-post-posts'] > 2)?($fields['mos-post-posts'] - 1):0, 
                         'offset' => 1
-                    );
+                    );        
+                    if (@fields['mos-post-source-1']) {
+                        $args['post__in'] = $fields['mos-post-source-1'];
+                    } elseif (@fields['mos-post-source-2']) {
+                        $args['category__in'] = $fields['mos-post-source-2'];                        
+                    }
                     $query = new WP_Query( $args );
                     if ($query->have_posts()) : ?>
                         <div class="mos-post-grid-block mos-post-grid-six general-post-block">
@@ -471,6 +482,11 @@ function crb_attach_theme_options() {
                         'post_type' => 'post',
                         'posts_per_page' => (@$fields['mos-post-posts'])?$fields['mos-post-posts']:-1,                    
                     );
+                    if (@fields['mos-post-source-1']) {
+                        $args['post__in'] = $fields['mos-post-source-1'];
+                    } elseif (@fields['mos-post-source-2']) {
+                        $args['category__in'] = $fields['mos-post-source-2'];                        
+                    }
                     $query = new WP_Query( $args );
                     if ($query->have_posts()) : ?>
                         
