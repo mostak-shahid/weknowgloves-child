@@ -493,7 +493,18 @@ function crb_attach_theme_options() {
                         <?php while ($query->have_posts()) : $query->the_post(); ?>
                             <div id="post-<?php the_ID(); ?>" <?php post_class( 'mos-post-grid-block mos-post-grid-four position-relative' ); ?>>
                                 <?php if (@$fields['mos-post-feature'] && has_post_thumbnail()) : ?>
-                                    <?php the_post_thumbnail( $size = 'full', array('class'=>'post-featured-image') ) ?>
+                                    <?php
+                                    $lsize = (@$fields['mos-post-feature-large'] && preg_match('/^\d+x\d+$/', $fields['mos-post-feature-large']))?$fields['mos-post-feature-large']:'530x315';
+                                    $slarr = explode('x',$lsize);
+                                    $width = intval($slarr[0]);
+                                    $height = intval($slarr[1]);
+                                    $attachment_id = get_post_thumbnail_id();
+                                    $rawurl = wp_get_attachment_url( $attachment_id );
+                                    $imgurl = aq_resize($rawurl,$width,$height, true);
+                                    $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                                    ?>
+                                    <?php //the_post_thumbnail( $size = 'full', array('class'=>'post-featured-image') ) ?>                                    
+                                    <img width="<?php echo $width ?>" height="<?php echo $height ?>" src="<?php echo $imgurl ?>" class="post-featured-image wp-post-image" alt="<?php echo $image_alt ?>" loading="lazy">
                                 <?php endif;?>
                                 <?php if (@$fields['mos-post-title']) : ?>
                                     <h4 class="post-title"><?php echo get_the_title()?></h4>
