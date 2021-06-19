@@ -561,6 +561,9 @@ function crb_attach_theme_options() {
                 <?php endif?>                
                 </div>
             </div>
+            <?php if (@fileds['mos-post-redirect-url']) : ?>
+                <div class="wp-block-buttons"><div class="wp-block-button"><a href="<?php echo esc_html( $fields['mos-post-redirect-url'] ); ?>" class="wp-block-button__link">Read More</a></div></div>
+            <?php endif?>
         </div>
         <?php
     });
