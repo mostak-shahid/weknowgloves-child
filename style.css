@@ -313,7 +313,14 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     position: relative;
     z-index: 2;
 }
-
+.layout-2 .general-post-block .post-block-sm {
+    margin-bottom: 20px;
+}
+.layout-2 .general-post-block .part-2 {
+    flex: 1;
+    padding: 3px 15px;
+    background-color: #ffffff;
+}
 @media (min-width:576px){
     .mos-post-grid-one{grid-column-end:span 1}
     .mos-post-grid-two{grid-column-end:span 2}
