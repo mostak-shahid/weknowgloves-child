@@ -506,6 +506,7 @@ function crb_attach_theme_options() {
                                     <?php //the_post_thumbnail( $size = 'full', array('class'=>'post-featured-image') ) ?>                                    
                                     <img width="<?php echo $width ?>" height="<?php echo $height ?>" src="<?php echo $imgurl ?>" class="post-featured-image wp-post-image" alt="<?php echo $image_alt ?>" loading="lazy">
                                 <?php endif;?>
+                                <div class="text-wrapper">
                                 <?php if (@$fields['mos-post-title']) : ?>
                                     <h4 class="post-title"><?php echo get_the_title()?></h4>
                                 <?php endif;?>
@@ -564,6 +565,7 @@ function crb_attach_theme_options() {
                                 <?php if (@$fields['mos-post-btn']) : ?>
                                     <div class="wp-block-buttons"><div class="wp-block-button mb-0"><span class="wp-block-button__link"><?php echo (@$fields['mos-post-btn-text'])?$fields['mos-post-btn-text']:'Read More'; ?></span></div></div>
                                 <?php endif;?>
+                                </div>
                                 <a href="<?php echo get_the_permalink() ?>" class="hidden-link">Read More</a>
                             </div>    
                         <?php endwhile?>

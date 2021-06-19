@@ -311,6 +311,12 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     padding-left: 10px;
     padding-right: 10px;
 }
+.layout-1 .mos-post-grid-block {
+    background-color: #ffffff;
+}
+.layout-1 .mos-post-grid-block .text-wrapper{
+    padding: 30px;
+}
 .layout-2 .feature-post-block .text-wrapper {
     background-color: #ffffff;
     margin-top: -50px;
