@@ -407,3 +407,8 @@ aside.widget-area {
         padding: 30px;
     }
 }
+@media (max-width:768px) {
+    .widget-area .widget-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
