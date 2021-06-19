@@ -332,6 +332,10 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     position: relative;
     z-index: 2;
 }
+.layout-1 .mos-post-grid-block .post-featured-image,.layout-2 .feature-post-block .post-featured-image{
+    width: 100%;
+    height: auto;
+}
 .layout-2 .general-post-block .post-block-sm {
     margin-bottom: 20px;
     background-color: #ffffff;
