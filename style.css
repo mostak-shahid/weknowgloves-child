@@ -399,6 +399,16 @@ aside.widget-area {
     }
 }
 @media (max-width:992px) {
+    .menu-button-container {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    .primary-navigation > .primary-menu-container {
+        visibility: hidden;
+    }
     .widget-area .widget-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
