@@ -402,4 +402,8 @@ aside.widget-area {
     .widget-area .widget-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+    #main aside.sidebar-right {
+        margin-top: 40px;
+        padding: 30px;
+    }
 }
