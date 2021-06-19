@@ -340,7 +340,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     flex: 1;
     padding: 3px 15px;
 }
-@media (min-width:768px){
+@media (min-width:767px){
     .mos-post-grid-one{grid-column-end:span 1}
     .mos-post-grid-two{grid-column-end:span 2}
     .mos-post-grid-three{grid-column-end:span 3}
@@ -353,7 +353,7 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     .mos-post-grid-ten{grid-column-end:span 10}
     .mos-post-grid-eleven{grid-column-end:span 11}
 }
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     main#main {
         display: flex;
         flex-wrap: wrap;
