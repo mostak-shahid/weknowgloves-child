@@ -409,6 +409,14 @@ aside.widget-area {
     .primary-navigation > .primary-menu-container {
         visibility: hidden;
     }
+    
+    .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+        position: absolute;
+        padding-top: calc(0.5 * var(--global--spacing-vertical));
+        margin-top: 0;
+        top: var(--global--admin-bar--height);
+    }
+    
     .widget-area .widget-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
