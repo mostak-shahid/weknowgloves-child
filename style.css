@@ -345,8 +345,10 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
     padding: 3px 15px;
 }
 .menu-button-container {
-    background-color: #0b1751;
     z-index: 1;
+}
+.primary-navigation-open .menu-button-container {
+    background-color: #0b1751;    
 }
 .menu-button-container span.dropdown-icon {    
     color: #ffffff;
