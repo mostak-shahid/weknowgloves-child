@@ -399,33 +399,6 @@ aside.widget-area {
     }
 }
 @media (max-width:992px) {
-    .menu-button-container {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-    }
-    .primary-navigation {
-        position: absolute;
-        top: var(--global--admin-bar--height);
-        right: 0;
-        color: var(--primary-nav--color-text);
-        font-size: var(--primary-nav--font-size);
-        line-height: 1.15;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .primary-navigation > .primary-menu-container {
-        visibility: hidden;
-    }
-    
-    .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
-        position: absolute;
-        padding-top: calc(0.5 * var(--global--spacing-vertical));
-        margin-top: 0;
-        top: var(--global--admin-bar--height);
-    }
     
     .widget-area .widget-wrapper {
         grid-template-columns: repeat(2, 1fr);
