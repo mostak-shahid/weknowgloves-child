@@ -303,7 +303,14 @@ h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-
 .mos-post-grid-merge-four-rows{grid-row-end:span 4}
 .mos-post-grid-merge-five-rows{grid-row-end:span 5}
 .mos-post-grid-merge-six-rows{grid-row-end:span 6}
-
+.mos-post-meta {
+    display: block;
+}
+.mos-post-meta .meta-unit+.meta-unit:before {
+    content: '/';
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .layout-2 .feature-post-block .text-wrapper {
     background-color: #ffffff;
     margin-top: -50px;
