@@ -360,8 +360,18 @@ aside.widget-area {
     padding-left: 30px;
     padding-right: 30px;
 }
+.mos-header-wrapper .menu-activator {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
 .mos-menu-header-container {
     display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
 }
 @media (min-width:768.98px){
     .mos-post-grid-one{grid-column-end:span 1}
