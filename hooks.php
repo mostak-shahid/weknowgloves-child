@@ -12,7 +12,7 @@ add_filter( 'body_class', 'add_slug_body_class' );
 if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
     function custom_mos_mobile_menu() {
         ?>
-        <div class="mos-header-wrapper d-flex justify-content-between p-5 bg-white position-relative">
+        <div class="mos-header-wrapper justify-content-between p-5 bg-white position-relative">
             <div class="logo-area text-left">
                 <?php
                 $custom_logo_id = get_theme_mod( 'custom_logo' );

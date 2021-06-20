@@ -437,7 +437,11 @@ aside.widget-area {
 }
 @media (max-width:992px) {
     .mos-header-wrapper {
-        display: block;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
     }
     header#masthead{
         display: none!important;
