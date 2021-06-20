@@ -373,6 +373,12 @@ aside.widget-area {
     left: 0;
     width: 100%;
 }
+.mos-menu-header-container ul {
+    list-style: none;
+}
+.mos-menu-header-container ul li .sub-menu-toggle{
+    display: none;
+}
 @media (min-width:768.98px){
     .mos-post-grid-one{grid-column-end:span 1}
     .mos-post-grid-two{grid-column-end:span 2}
