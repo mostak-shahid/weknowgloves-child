@@ -9,3 +9,8 @@ function add_slug_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+function custom_mos_mobile_menu(){
+    echo "Mobile Menu";
+}
+add_action( 'wp_body_open', 'custom_mos_mobile_menu' );
