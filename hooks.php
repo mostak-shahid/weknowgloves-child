@@ -13,7 +13,13 @@ if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
     function custom_mos_mobile_menu() {
         ?>
         <div class="mos-header-wrapper d-flex justify-content-between">
-            <div class="logo-area text-left">Logo</div>
+            <div class="logo-area text-left">
+                <?php
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $site_icon_url = get_site_icon_url();
+                ?>
+                <a href="<?php home_url() ?>" class="mos-logo"><img src="<?php aq_resize($site_icon_url, 30,30,true) ?>" alt="<?php echo get_bloginfo('name') ?> - Logo"></a>
+            </div>
             <div class="menu-area text-right">
                 <span class="menu-activator">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
