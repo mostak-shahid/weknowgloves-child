@@ -15,6 +15,7 @@ if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
             'menu'            => 'mobilemenu',
             'theme_location'  => 'mobilemenu',
             'menu_class'      => 'mos-mobile-menu',
+            'container_class' => 'mos-menu-header-container'
         ]);
     }
 endif;
