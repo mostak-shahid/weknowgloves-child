@@ -12,7 +12,7 @@ add_filter( 'body_class', 'add_slug_body_class' );
 if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
     function custom_mos_mobile_menu() {
         ?>
-        <div class="mos-header-wrapper d-flex justify-content-between p-5">
+        <div class="mos-header-wrapper d-flex justify-content-between p-5 bg-white">
             <div class="logo-area text-left">
                 <?php
                 $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -40,19 +40,17 @@ if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
                 </svg>
                 </span>
             </div>
-        </div>
-        
-                
-                <div class="mos-menu-header-container">                    
-                    <?php 
-                    wp_nav_menu([
-                        'menu'            => 'mobilemenu',
-                        'theme_location'  => 'mobilemenu',
-                        'menu_class'      => 'mos-mobile-menu',
-                        'container' => false
-                    ]);
-                    ?>
-                </div>
+            <div class="mos-menu-header-container">                    
+                <?php 
+                wp_nav_menu([
+                    'menu'            => 'mobilemenu',
+                    'theme_location'  => 'mobilemenu',
+                    'menu_class'      => 'mos-mobile-menu',
+                    'container' => false
+                ]);
+                ?>
+            </div>
+        </div>               
         <?php
     }
 endif;
