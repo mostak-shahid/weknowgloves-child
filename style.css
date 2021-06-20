@@ -439,8 +439,8 @@ aside.widget-area {
     .mos-header-wrapper {
         display: block;
     }
-    #masthead{
-        display: none;
+    header#masthead{
+        display: none!important;
     }
     .widget-area .widget-wrapper {
         grid-template-columns: repeat(2, 1fr);
