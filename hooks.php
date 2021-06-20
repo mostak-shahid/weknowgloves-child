@@ -11,12 +11,43 @@ function add_slug_body_class( $classes ) {
 add_filter( 'body_class', 'add_slug_body_class' );
 if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
     function custom_mos_mobile_menu() {
-        wp_nav_menu([
-            'menu'            => 'mobilemenu',
-            'theme_location'  => 'mobilemenu',
-            'menu_class'      => 'mos-mobile-menu',
-            'container_class' => 'mos-menu-header-container'
-        ]);
+        ?>
+        <div class="mos-header-wrapper d-flex justify-content-between">
+            <div class="logo-area text-left">Logo</div>
+            <div class="menu-area text-right">
+                <span class="menu-activator">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                    <g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 24c-6.617 0-12-5.383-12-12s5.383-12 12-12 12 5.383 12 12-5.383 12-12 12zm0-23c-6.065 0-11 4.935-11 11s4.935 11 11 11 11-4.935 11-11-4.935-11-11-11z" fill="#000000" data-original="#000000" style="" class=""></path>
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" fill="#000000" data-original="#000000" style="" class=""></path>
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" fill="#000000" data-original="#000000" style="" class=""></path>
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" fill="#000000" data-original="#000000" style="" class=""></path>
+                        </g>
+                    </g>
+                </svg>
+                </span>
+            </div>
+        </div>
+        
+                
+                <div class="mos-menu-header-container">                    
+                    <?php 
+                    wp_nav_menu([
+                        'menu'            => 'mobilemenu',
+                        'theme_location'  => 'mobilemenu',
+                        'menu_class'      => 'mos-mobile-menu',
+                        'container' => false
+                    ]);
+                    ?>
+                </div>
+        <?php
     }
 endif;
 add_action( 'wp_body_open', 'custom_mos_mobile_menu' );
