@@ -13,4 +13,7 @@ jQuery(document).ready(function($){
         })
     });
     $(".slick-slider").slick();
+    $('.mos-header-wrapper .menu-activator').click(function(){
+        $(this).parent().siblings('.mos-menu-header-container').toggle();
+    });
 });
