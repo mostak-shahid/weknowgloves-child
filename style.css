@@ -375,6 +375,8 @@ aside.widget-area {
 }
 .mos-menu-header-container ul {
     list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .mos-menu-header-container ul li a {
     text-decoration: none;
