@@ -357,6 +357,9 @@ aside.widget-area {
     padding-left: 30px;
     padding-right: 30px;
 }
+.mos-menu-header-container {
+    display: none;
+}
 @media (min-width:768.98px){
     .mos-post-grid-one{grid-column-end:span 1}
     .mos-post-grid-two{grid-column-end:span 2}
