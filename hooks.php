@@ -40,7 +40,7 @@ if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
                 </svg>
                 </span>
             </div>
-            <div class="mos-menu-header-container">                    
+            <div class="mos-menu-header-container z-index-9 bg-white">                    
                 <?php 
                 wp_nav_menu([
                     'menu'            => 'mobilemenu',
