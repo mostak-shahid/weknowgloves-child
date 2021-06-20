@@ -9,7 +9,7 @@ function add_slug_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
-if ( ! function_exists( 'mosacademy_setup' ) ) :
+if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
     function custom_mos_mobile_menu() :
         wp_nav_menu([
             'menu'            => 'mobilemenu',
