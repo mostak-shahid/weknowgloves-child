@@ -18,7 +18,7 @@ if ( ! function_exists( 'custom_mos_mobile_menu' ) ) :
                 $custom_logo_id = get_theme_mod( 'custom_logo' );
                 $site_icon_url = get_site_icon_url();
                 ?>
-                <a href="<?php echo home_url() ?>" class="mos-logo"><img src="<?php echo aq_resize($site_icon_url, 30,30,true) ?>" alt="<?php echo get_bloginfo('name') ?> - Logo"></a>
+                <a href="<?php echo home_url() ?>" class="mos-logo d-block"><img src="<?php echo aq_resize($site_icon_url, 30,30,true) ?>" alt="<?php echo get_bloginfo('name') ?> - Logo"></a>
             </div>
             <div class="menu-area text-right">
                 <span class="menu-activator">
